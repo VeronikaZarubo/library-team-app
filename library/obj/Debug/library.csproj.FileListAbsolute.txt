@@ -1,0 +1,10 @@
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\bin\Debug\library.exe.config
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\bin\Debug\library.exe
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\bin\Debug\library.pdb
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.csproj.AssemblyReference.cache
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.Login.resources
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.Properties.Resources.resources
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.csproj.GenerateResource.cache
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.csproj.CoreCompileInputs.cache
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.exe
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.pdb
