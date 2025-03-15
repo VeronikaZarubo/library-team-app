@@ -8,3 +8,4 @@ C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\lib
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.csproj.CoreCompileInputs.cache
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.exe
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.pdb
+C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.Registration1.resources
