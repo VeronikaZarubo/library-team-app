@@ -9,3 +9,14 @@ C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\lib
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.exe
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.pdb
 C:\Documents\Documents\Studia\4\Testowanie\library\library\library\obj\Debug\library.Registration1.resources
+C:\Documents\Documents\img\Nowy folder\library\bin\Debug\library.exe.config
+C:\Documents\Documents\img\Nowy folder\library\bin\Debug\library.exe
+C:\Documents\Documents\img\Nowy folder\library\bin\Debug\library.pdb
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.csproj.AssemblyReference.cache
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.Login.resources
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.Properties.Resources.resources
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.Registration1.resources
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.csproj.GenerateResource.cache
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.csproj.CoreCompileInputs.cache
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.exe
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.pdb
