@@ -35,7 +35,7 @@
             this.Tb_LoginEmail = new System.Windows.Forms.TextBox();
             this.Tb_LoginPassword = new System.Windows.Forms.TextBox();
             this.Bt_LoginLogIn = new System.Windows.Forms.Button();
-            this.labelLoginSwitchToRegistration = new System.Windows.Forms.Label();
+            this.LabelLoginSwitchToRegistration = new System.Windows.Forms.Label();
             this.bt_LoginPassMask = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -106,18 +106,18 @@
             this.Bt_LoginLogIn.UseVisualStyleBackColor = false;
             this.Bt_LoginLogIn.Click += new System.EventHandler(this.Bt_LoginLogIn_Click);
             // 
-            // labelLoginSwitchToRegistration
+            // LabelLoginSwitchToRegistration
             // 
-            this.labelLoginSwitchToRegistration.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelLoginSwitchToRegistration.AutoSize = true;
-            this.labelLoginSwitchToRegistration.BackColor = System.Drawing.Color.Transparent;
-            this.labelLoginSwitchToRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelLoginSwitchToRegistration.Location = new System.Drawing.Point(276, 276);
-            this.labelLoginSwitchToRegistration.Name = "labelLoginSwitchToRegistration";
-            this.labelLoginSwitchToRegistration.Size = new System.Drawing.Size(133, 32);
-            this.labelLoginSwitchToRegistration.TabIndex = 6;
-            this.labelLoginSwitchToRegistration.Text = "Don\'t have an\r\n account? Sign up!";
-            this.labelLoginSwitchToRegistration.Click += new System.EventHandler(this.labelLoginSwitchToRegistration_Click);
+            this.LabelLoginSwitchToRegistration.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LabelLoginSwitchToRegistration.AutoSize = true;
+            this.LabelLoginSwitchToRegistration.BackColor = System.Drawing.Color.Transparent;
+            this.LabelLoginSwitchToRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelLoginSwitchToRegistration.Location = new System.Drawing.Point(276, 276);
+            this.LabelLoginSwitchToRegistration.Name = "LabelLoginSwitchToRegistration";
+            this.LabelLoginSwitchToRegistration.Size = new System.Drawing.Size(133, 32);
+            this.LabelLoginSwitchToRegistration.TabIndex = 6;
+            this.LabelLoginSwitchToRegistration.Text = "Don\'t have an\r\n account? Sign up!";
+            this.LabelLoginSwitchToRegistration.Click += new System.EventHandler(this.LabelLoginSwitchToRegistration_Click);
             // 
             // bt_LoginPassMask
             // 
@@ -138,14 +138,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 487);
             this.Controls.Add(this.bt_LoginPassMask);
-            this.Controls.Add(this.labelLoginSwitchToRegistration);
+            this.Controls.Add(this.LabelLoginSwitchToRegistration);
             this.Controls.Add(this.Bt_LoginLogIn);
             this.Controls.Add(this.Tb_LoginPassword);
             this.Controls.Add(this.Tb_LoginEmail);
             this.Controls.Add(this.labelLoginPassword);
             this.Controls.Add(this.labelLoginLogin);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -164,7 +164,7 @@
         private System.Windows.Forms.TextBox Tb_LoginEmail;
         private System.Windows.Forms.TextBox Tb_LoginPassword;
         private System.Windows.Forms.Button Bt_LoginLogIn;
-        private System.Windows.Forms.Label labelLoginSwitchToRegistration;
+        private System.Windows.Forms.Label LabelLoginSwitchToRegistration;
         private System.Windows.Forms.Button bt_LoginPassMask;
     }
 }

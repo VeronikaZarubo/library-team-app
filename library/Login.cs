@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace library
 {
@@ -27,8 +28,6 @@ namespace library
         //    InitializeComponent();
         //    string connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=Baza danych nowa.accdb;";
         //    connection = new OleDbConnection(connectionString);
-
-        //    tb_passLogin.UseSystemPasswordChar = true;
         //}
 
         //private void bt_switchToRegistation_Click(object sender, EventArgs e)
@@ -89,12 +88,7 @@ namespace library
         //        connection.Close();
         //    }
         //}
-        //private void bt_login_Click(object sender, EventArgs e)
-        //{
-        //    Rejestracja newLevel = new Rejestracja();
-        //    this.Hide();
-        //    newLevel.Show();
-        //}       
+             
 
         private void bt_passMask_Click(object sender, EventArgs e)
         {
@@ -118,7 +112,7 @@ namespace library
             Tb_LoginPassword.UseSystemPasswordChar = true;
         }
 
-        private void labelLoginSwitchToRegistration_Click(object sender, EventArgs e)
+        private void LabelLoginSwitchToRegistration_Click(object sender, EventArgs e)
         {
             Registration1 newLevel = new Registration1();
             this.Hide();
@@ -128,9 +122,65 @@ namespace library
 
         private void Bt_LoginLogIn_Click(object sender, EventArgs e)
         {
-            Menu newLevel = new Menu();
-            this.Hide();
-            newLevel.Show();
+            string ConnectionString = "Data Source=leader-nest.database.windows.net;Initial Catalog=Biblioteka;User ID=papa";
+
+            SqlConnection connection = new SqlConnection(ConnectionString);
+
+            string username = Tb_LoginEmail.Text;
+            string password = Tb_LoginPassword.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Please enter both username and password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //return;
+            }
+
+            try
+            {
+                connection.Open();
+
+                string query = "SELECT Email, Haslo FROM Uzytkownicy WHERE Email = @username AND Haslo = @password";
+
+                //using (SqlConnection command = new SqlConnection(query, connection))
+                //{
+                //    command.Parameters.Clear();
+
+                //    command.Parameters.AddWithValue("@Email", username.Trim().ToString());
+                //    command.Parameters.AddWithValue("@Haslo", password.Trim().ToString());
+
+                //    rd = command.ExecuteReader();
+
+                //    if (rd.HasRows)
+                //    {
+                //        Dane.Username = Tb_LoginEmail.Text;
+
+                //        Menu newLevel = new Menu(/*username*/); // + username dla visits
+                //        this.Hide();
+                //        newLevel.Show();
+
+                //        while (rd.Read())
+                //        {
+                //            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //        }
+
+                //        username = string.Empty;
+                //        password = string.Empty;
+                //    }
+                //    else
+                //    {
+                //        MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //    }
+                //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("An error occurred: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            finally
+            {
+                //rd.Close(); 
+                connection.Close();
+            }
         }
     }
 }

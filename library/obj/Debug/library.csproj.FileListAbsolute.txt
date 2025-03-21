@@ -20,3 +20,4 @@ C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.csproj.Generate
 C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.csproj.CoreCompileInputs.cache
 C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.exe
 C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.pdb
+C:\Documents\Documents\img\Nowy folder\library\obj\Debug\library.Menu.resources
