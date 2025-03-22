@@ -134,17 +134,14 @@ namespace library
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Please enter both username and password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                //return;
+                return;
             }
 
             try
             {
                 connection.Open();
 
-                string query = "SELECT Email, Haslo FROM Uzytkownicy WHERE Email = @username AND Haslo = @password";
-
-                //SqlCommand command = new SqlCommand(query, connection);
-                //command.ExecuteNonQuery();
+                string query = "SELECT Email, Haslo FROM Uzytkownicy WHERE Email = '" + username + "' AND Haslo = '" + password + "'";
 
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
@@ -182,7 +179,6 @@ namespace library
             }
             finally
             {
-                //rd.Close(); 
                 connection.Close();
             }
         }
