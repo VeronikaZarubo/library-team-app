@@ -9,14 +9,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|C:\\Documents\\Documents\\img\\Nowy folder\\library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|solutionrelative:library\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|c:\\documents\\documents\\img\\nowy folder\\library\\registration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|solutionrelative:library\\registration1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|C:\\Documents\\Documents\\img\\Nowy folder\\library\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{32E55704-28FA-48C7-9B6E-4804B75F83E2}|library\\library.csproj|solutionrelative:library\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,33 +32,10 @@
               "RelativeDocumentMoniker": "library\\Login.cs",
               "ToolTip": "C:\\Documents\\Documents\\img\\Nowy folder\\library\\Login.cs",
               "RelativeToolTip": "library\\Login.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAswIYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAUwJ8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T18:31:04.197Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Registration1.cs [Design]",
-              "DocumentMoniker": "C:\\Documents\\Documents\\img\\Nowy folder\\library\\Registration1.cs",
-              "RelativeDocumentMoniker": "library\\Registration1.cs",
-              "ToolTip": "C:\\Documents\\Documents\\img\\Nowy folder\\library\\Registration1.cs [Design]",
-              "RelativeToolTip": "library\\Registration1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T11:11:43.052Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Menu.cs [Design]",
-              "DocumentMoniker": "C:\\Documents\\Documents\\img\\Nowy folder\\library\\Menu.cs",
-              "RelativeDocumentMoniker": "library\\Menu.cs",
-              "ToolTip": "C:\\Documents\\Documents\\img\\Nowy folder\\library\\Menu.cs [Design]",
-              "RelativeToolTip": "library\\Menu.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T10:52:00.049Z"
             },
             {
               "$type": "Document",

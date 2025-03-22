@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.Sql;
 
 namespace library
 {
@@ -18,6 +19,7 @@ namespace library
         {
             InitializeComponent();
         }
+        public static SqlDataReader rd;
 
 
         //private OleDbConnection connection;
@@ -88,9 +90,9 @@ namespace library
         //        connection.Close();
         //    }
         //}
-             
 
-        private void bt_passMask_Click(object sender, EventArgs e)
+
+        private void Bt_passMask_Click(object sender, EventArgs e)
         {
             if (Tb_LoginPassword.UseSystemPasswordChar == false)
             {
@@ -141,36 +143,38 @@ namespace library
 
                 string query = "SELECT Email, Haslo FROM Uzytkownicy WHERE Email = @username AND Haslo = @password";
 
-                //using (SqlConnection command = new SqlConnection(query, connection))
-                //{
-                //    command.Parameters.Clear();
+                //SqlCommand command = new SqlCommand(query, connection);
+                //command.ExecuteNonQuery();
 
-                //    command.Parameters.AddWithValue("@Email", username.Trim().ToString());
-                //    command.Parameters.AddWithValue("@Haslo", password.Trim().ToString());
+                using (SqlCommand command = new SqlCommand(query, connection))
+                {
+                    command.ExecuteNonQuery();
+                    command.Parameters.Clear();
 
-                //    rd = command.ExecuteReader();
+                    command.Parameters.AddWithValue("@Email", username.Trim().ToString());
+                    command.Parameters.AddWithValue("@Haslo", password.Trim().ToString());
 
-                //    if (rd.HasRows)
-                //    {
-                //        Dane.Username = Tb_LoginEmail.Text;
+                    rd = command.ExecuteReader();
 
-                //        Menu newLevel = new Menu(/*username*/); // + username dla visits
-                //        this.Hide();
-                //        newLevel.Show();
+                    if (rd.HasRows)
+                    {
+                        Menu newLevel = new Menu();
+                        this.Hide();
+                        newLevel.Show();
 
-                //        while (rd.Read())
-                //        {
-                //            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //        }
+                        while (rd.Read())
+                        {
+                            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
 
-                //        username = string.Empty;
-                //        password = string.Empty;
-                //    }
-                //    else
-                //    {
-                //        MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    }
-                //}
+                        username = string.Empty;
+                        password = string.Empty;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
             }
             catch (Exception ex)
             {

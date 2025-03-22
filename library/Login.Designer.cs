@@ -36,7 +36,7 @@
             this.Tb_LoginPassword = new System.Windows.Forms.TextBox();
             this.Bt_LoginLogIn = new System.Windows.Forms.Button();
             this.LabelLoginSwitchToRegistration = new System.Windows.Forms.Label();
-            this.bt_LoginPassMask = new System.Windows.Forms.Button();
+            this.Bt_LoginPassMask = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -119,16 +119,16 @@
             this.LabelLoginSwitchToRegistration.Text = "Don\'t have an\r\n account? Sign up!";
             this.LabelLoginSwitchToRegistration.Click += new System.EventHandler(this.LabelLoginSwitchToRegistration_Click);
             // 
-            // bt_LoginPassMask
+            // Bt_LoginPassMask
             // 
-            this.bt_LoginPassMask.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_LoginPassMask.Location = new System.Drawing.Point(527, 213);
-            this.bt_LoginPassMask.Name = "bt_LoginPassMask";
-            this.bt_LoginPassMask.Size = new System.Drawing.Size(29, 27);
-            this.bt_LoginPassMask.TabIndex = 7;
-            this.bt_LoginPassMask.Text = "👁️";
-            this.bt_LoginPassMask.UseVisualStyleBackColor = true;
-            this.bt_LoginPassMask.Click += new System.EventHandler(this.bt_passMask_Click);
+            this.Bt_LoginPassMask.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bt_LoginPassMask.Location = new System.Drawing.Point(527, 213);
+            this.Bt_LoginPassMask.Name = "Bt_LoginPassMask";
+            this.Bt_LoginPassMask.Size = new System.Drawing.Size(29, 27);
+            this.Bt_LoginPassMask.TabIndex = 7;
+            this.Bt_LoginPassMask.Text = "👁️";
+            this.Bt_LoginPassMask.UseVisualStyleBackColor = true;
+            this.Bt_LoginPassMask.Click += new System.EventHandler(this.Bt_passMask_Click);
             // 
             // Login
             // 
@@ -137,7 +137,7 @@
             this.BackgroundImage = global::library.Properties.Resources.Login;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 487);
-            this.Controls.Add(this.bt_LoginPassMask);
+            this.Controls.Add(this.Bt_LoginPassMask);
             this.Controls.Add(this.LabelLoginSwitchToRegistration);
             this.Controls.Add(this.Bt_LoginLogIn);
             this.Controls.Add(this.Tb_LoginPassword);
@@ -165,7 +165,7 @@
         private System.Windows.Forms.TextBox Tb_LoginPassword;
         private System.Windows.Forms.Button Bt_LoginLogIn;
         private System.Windows.Forms.Label LabelLoginSwitchToRegistration;
-        private System.Windows.Forms.Button bt_LoginPassMask;
+        private System.Windows.Forms.Button Bt_LoginPassMask;
     }
 }
 
